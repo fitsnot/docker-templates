@@ -2,61 +2,24 @@
 <Container version="2">
   <Name>premiumizer</Name>
   <Repository>piejanssens/premiumizer:latest</Repository>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/piejanssens/premiumizer</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
-  <Overview>Premiumizer is a download management tool for premiumize.me cloud downloads.&#xD;
-&#xD;
-Web interface to manage premiumize.me downloads: cloud Torrent &amp;amp; Nzb and Filehosts links&#xD;
-Category based automatic downloader of finished cloud tasks to local file system&#xD;
-Picks up new taks through black hole&#xD;
-Integrates with nzbToMedia (post processing)</Overview>
+  <Overview>Premiumizer is a download management tool for premiumize.me cloud downloads.&#xD;&#xD;Web interface to manage premiumize.me downloads: cloud Torrent &amp;amp; Nzb and Filehosts links&#xD;Category based automatic downloader of finished cloud tasks to local file system&#xD;Picks up new taks through black hole&#xD;Integrates with nzbToMedia (post processing)</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
-  <TemplateURL/>
-  <Icon/>
+  <TemplateURL>https://raw.githubusercontent.com/fitsnot/docker-templates/main/templates/premiumizer.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/fitsnot/docker-templates/main/templates/icons/premiumizer.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1617791671</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Description>Premiumize.me combines anonymous cloud torrent downloads, usenet and premium hosters in one subscription. Cloud torrent downloads are cached, meaning if some other premiumize.me member downloaded the torrent through premiumize.me before, you can immediately download the files from that torrent over HTTPS at top speeds.</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>5000</HostPort>
-        <ContainerPort>5000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/premiumizer/</HostDir>
-      <ContainerDir>/conf</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/premiumizer/in/</HostDir>
-      <ContainerDir>/blackhole</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/premiumizer/out/</HostDir>
-      <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
+  <DonateText>Sponsor piejanssens</DonateText>
+  <DonateLink>https://www.paypal.me/sponsorpj</DonateLink>
+  <Description>Premiumizer is a download management tool for premiumize.me cloud downloads.&#xD;&#xD;Web interface to manage premiumize.me downloads: cloud Torrent &amp;amp; Nzb and Filehosts links&#xD;Category based automatic downloader of finished cloud tasks to local file system&#xD;Picks up new taks through black hole&#xD;Integrates with nzbToMedia (post processing)</Description>
   <Labels/>
   <Config Name="Host Port 1" Target="5000" Default="5000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="Host Path 1" Target="/conf" Default="/mnt/user/appdata/premiumizer/" Mode="rw" Description="Configuration path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/premiumizer/</Config>
   <Config Name="Host Path 2" Target="/blackhole" Default="" Mode="rw" Description="/blackhole watch path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/premiumizer/in/</Config>
   <Config Name="Host Path 3" Target="/downloads" Default="" Mode="rw" Description="download path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/premiumizer/out/</Config>
+  <Config Name="Host Path 4" Target="/filmchen" Default="" Mode="rw" Description="/filmchen path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/filmchen/</Config>
 </Container>
