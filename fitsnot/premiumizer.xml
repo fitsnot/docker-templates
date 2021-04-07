@@ -9,8 +9,8 @@
   <Overview>Premiumizer is a download management tool for premiumize.me cloud downloads.&#xD;&#xD;Web interface to manage premiumize.me downloads: cloud Torrent &amp;amp; Nzb and Filehosts links&#xD;Category based automatic downloader of finished cloud tasks to local file system&#xD;Picks up new taks through black hole&#xD;Integrates with nzbToMedia (post processing)</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/fitsnot/docker-templates/main/fitsnot/templates/premiumizer.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/fitsnot/docker-templates/main/fitsnot/templates/icons/premiumizer.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/fitsnot/docker-templates/main/fitsnot/premiumizer.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/fitsnot/docker-templates/main/fitsnot/icons/premiumizer.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText>Sponsor piejanssens</DonateText>
