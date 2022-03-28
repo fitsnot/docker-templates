@@ -22,7 +22,7 @@
     </Variable>
   </Environment>
   <Labels/>
-  <PostArgs>--model QL-800 file:///dev/usb/lp0<PostArgs/>
+  <PostArgs>--model QL-800 file:///dev/usb/lp0</PostArgs>
   <Config Name="Host Port 1" Target="8013" Default="8013" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8013</Config>
   <Config Name="Host Path 1" Target="/dev/usb/" Default="" Mode="rw" Description="/dev/usb/" Type="Path" Display="always" Required="false" Mask="false">/dev/usb/</Config>
   <Config Name="model" Target="model" Default="QL-800" Mode="" Description="Model of printer" Type="Variable" Display="always" Required="true" Mask="false">QL-800</Config>
