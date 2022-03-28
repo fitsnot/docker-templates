@@ -23,5 +23,5 @@
   <Labels/>
   <PostArgs>--model QL-800 file:///dev/usb/lp0</PostArgs>
   <Config Name="Host Port 1" Target="8013" Default="8013" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8013</Config>
-  <Config Name="Host Path 1" Target="/dev/usb/lp0" Default="" Mode="rw" Description="/dev/usb/lp0" Type="Path" Display="always" Required="false" Mask="false">$(readlink -f /dev/ql800)</Config>
+  <Config Name="Host Path 1" Target="/dev/usb/lp0" Default="" Mode="rw" Description="/dev/usb/lp0" Type="Device" Display="always" Required="false" Mask="false">$(readlink -f /dev/ql800)</Config>
 </Container>
