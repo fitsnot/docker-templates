@@ -10,10 +10,11 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8013]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/fitsnot/docker-templates/main/fitsnot/fitsnot-brother_ql_web.xml</TemplateURL>
-  <Icon></Icon>
+  <Icon/>
   <ExtraParams>--restart=always --device=$(readlink -f /dev/ql800)</ExtraParams>
   <PostArgs/>
-  <Description>This repository contain the application brother_ql_web, a web interface to print labels with Brother's QL-series label printers. The software is based on the Python package brother_ql.  <Labels/>
+  <Description>This repository contain the application brother_ql_web, a web interface to print labels with Brother's QL-series label printers. The software is based on the Python package brother_ql.</Description>
+  <Labels/>
   <Config Name="Host Port 1" Target="8013" Default="8013" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8013</Config>
   <Config Name="Host Path 4" Target="/filmchen" Default="" Mode="rw" Description="/filmchen path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/filmchen/</Config>
 </Container>
